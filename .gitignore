@@ -1,0 +1,67 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Django stuff:
+*.log
+*.pot
+*.pyc
+*.pyo
+*.sqlite3
+db.sqlite3
+media/
+staticfiles/
+*.db
+
+# If using Django's collectstatic
+/static/
+
+# Python virtual environment
+venv/
+env/
+ENV/
+.venv/
+.ENV/
+
+# VS Code / PyCharm IDE files
+.vscode/
+.idea/
+
+# Environment variables
+.env
+.env.*
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Sphinx documentation build
+docs/_build/
+docs/_static/
+docs/_templates/
+*.rst~
+
+# pip requirements
+pip-log.txt
+
+# Coverage reports
+htmlcov/
+.coverage
+.tox/
+.nox/
+coverage.xml
+*.cover
+
+# Test output
+.junit/
+.pytest_cache/
+test-results/
+
+# Migrations (optional to ignore)
+*/migrations/__pycache__/
+*/migrations/*.pyc
