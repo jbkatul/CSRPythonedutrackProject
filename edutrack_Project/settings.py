@@ -79,7 +79,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'edutrack_db',
         'USER': 'root',
-        'PASSWORD': 'root',
+        'PASSWORD': 'Tka',
         'HOST': 'localhost',
         'PORT': '3306',
     }

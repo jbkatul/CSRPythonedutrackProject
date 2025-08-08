@@ -114,3 +114,7 @@ class sakshidemoview(APIView):
     def get(self, request):
         return Response("this is a get request")
     
+    
+class teacher:
+    def get(self,request):
+        return Response("intro to pull request")
