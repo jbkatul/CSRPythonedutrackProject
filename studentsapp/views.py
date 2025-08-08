@@ -103,13 +103,48 @@ class TaskforRachana(APIView):
     # This class is for testing purposes only, as per the request.
     # write add two number logic accepts two numbers in request body and returns the sum.
     def get(self, request):
-        pass
+        print("in GET Method of TaskforRachana")
+        num1 = request.GET.get('num1')
+        num2 = request.GET.get('num2')
+        
+        if num1 is not None and num2 is not None:
+            try:
+                sum_result = int(num1) + int(num2)
+                return Response({"sum of": num1, "and": num2, "is": sum_result}, status=200)
+            except Exception as e:
+                return Response({"error": str(e)}, status=400)
+        else:
+            return Response({"error": "Both num1 and num2 are required in integers form."}, status=400)
 
     def post(self, request):
-        pass
+        print("in POST Method of TaskforRachana")
+        num1 = request.data.get('num1')
+        num2 = request.data.get('num2')
+
+        if num1 is not None and num2 is not None:
+            try:
+                sum_result = int(num1) + int(num2)
+                return Response({"sum of": num1, "and": num2, "is": sum_result,"message": "Addition successful"}, status=200)
+            except Exception as e:
+                return Response({"error": str(e)}, status=400)
+        else:
+            return Response({"error": "Both num1 and num2 are required in integers form."}, status=400)
+
+# write your own task inside a class TaskforRachana
+
+
+class TaskforAnushka(APIView):
+    def get(self,request):
+        return Response("Task completed!")
+
+class sakshidemoview(APIView):
+    def get(self, request):
+        return Response("this is a get request")
+    
 
 # write your own task inside a class TaskforRachana
 
 class Manasi_Task(APIView):
     def get(self,request):
         return Response({"message":"Hello , Welcome to student API !"})
+
