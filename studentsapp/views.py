@@ -113,4 +113,12 @@ class TaskforRachana(APIView):
 class sakshidemoview(APIView):
     def get(self, request):
         return Response("this is a get request")
+
+
+class TaskforKetan(APIView):
+    def get(self, request):
+        return Response({"message": "Ketan's task - GET method", "status": "success"})
+    
+    def post(self, request):
+        return Response({"message": "Ketan's task - POST method", "data": request.data, "status": "success"})
     
