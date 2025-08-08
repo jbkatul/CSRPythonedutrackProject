@@ -131,3 +131,14 @@ class TaskforRachana(APIView):
             return Response({"error": "Both num1 and num2 are required in integers form."}, status=400)
 
 # write your own task inside a class TaskforRachana
+
+
+class TaskforAnushka(APIView):
+    def get(self,request):
+        return Response("Task completed!")
+
+class sakshidemoview(APIView):
+    def get(self, request):
+        return Response("this is a get request")
+    
+
