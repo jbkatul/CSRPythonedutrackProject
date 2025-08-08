@@ -109,3 +109,7 @@ class TaskforRachana(APIView):
         pass
 
 # write your own task inside a class TaskforRachana
+
+class Manasi_Task(APIView):
+    def get(self,request):
+        return Response({"message":"Hello , Welcome to student API !"})
