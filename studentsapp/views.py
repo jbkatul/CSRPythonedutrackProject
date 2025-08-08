@@ -97,3 +97,15 @@ class StudentDeleteView(APIView):
                 return Response({"error": str(e)}, status=404)
         else:
             return Response({"error": "Roll number is required"}, status=400)
+
+
+class TaskforRachana(APIView):
+    # This class is for testing purposes only, as per the request.
+    # write add two number logic accepts two numbers in request body and returns the sum.
+    def get(self, request):
+        pass
+
+    def post(self, request):
+        pass
+
+# write your own task inside a class TaskforRachana
