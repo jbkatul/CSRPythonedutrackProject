@@ -109,3 +109,10 @@ class TaskforRachana(APIView):
         pass
 
 # write your own task inside a class TaskforRachana
+
+from django.views import View
+from django.http import HttpResponse
+
+class PrinceView(View):
+    def get(self, request):
+        return HttpResponse("Welcome to my code!!")

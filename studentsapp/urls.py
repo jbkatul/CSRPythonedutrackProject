@@ -10,5 +10,12 @@ urlpatterns = [
     path("update-student/", StudentInsertView.as_view(), name='update_student'),  # Reusing insert view for update
 
     #add urls as per your requirement
-
+    
 ] 
+
+from django.urls import path,include
+from .views import PrinceView
+
+urlpatterns = [
+    path('prince/', PrinceView.as_view(), name='prince'),
+]
