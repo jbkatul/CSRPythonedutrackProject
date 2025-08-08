@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'edutrack_Project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'student_db',
+        'NAME': 'edutrack_db',
         'USER': 'root',
         'PASSWORD': 'root',
         'HOST': 'localhost',
