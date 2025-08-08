@@ -142,3 +142,9 @@ class sakshidemoview(APIView):
         return Response("this is a get request")
     
 
+# write your own task inside a class TaskforRachana
+
+class Manasi_Task(APIView):
+    def get(self,request):
+        return Response({"message":"Hello , Welcome to student API !"})
+

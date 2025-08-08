@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+*.pyo
+*.pyd
+
+# Virtual Environments
+venv/
+env/
+ENV/
+.venv/
+
+# VS Code
+.vscode/
+
+# Django migrations
+**/migrations/
+!**/migrations/__init__.py
+
+# Django secret keys or environment files
+.env
+.env.*
+
+# Byte-compiled / cache / logs
+*.log
+*.pot
+*.pyc
+
+# Databases
+*.sqlite3
+
+# Static and media files (if generated)
+staticfiles/
+media/
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# IDEs
+.idea/
+*.swp
