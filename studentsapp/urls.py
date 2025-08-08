@@ -9,6 +9,8 @@ urlpatterns = [
     path('delete-one-student/', StudentDeleteView.as_view(), name='delete_one_student'),
     path("update-student/", StudentInsertView.as_view(), name='update_student'),  # Reusing insert view for update
 
+    path('atul-task/', AtulTask.as_view(), name='atul_task'),  # Adding Atul's task endpoint
+
     #add urls as per your requirement
 
 ] 

@@ -109,3 +109,7 @@ class TaskforRachana(APIView):
         pass
 
 # write your own task inside a class TaskforRachana
+
+class AtulTask(APIView):
+    def get(self, request):
+        return Response({"message": "This is Atul's task response!"}, status=200)
