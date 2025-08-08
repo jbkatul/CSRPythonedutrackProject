@@ -124,7 +124,7 @@ class TaskforRachana(APIView):
         if num1 is not None and num2 is not None:
             try:
                 sum_result = int(num1) + int(num2)
-                return Response({"sum of": num1, "and": num2, "is": sum_result}, status=200)
+                return Response({"sum of": num1, "and": num2, "is": sum_result,"message": "Addition successful"}, status=200)
             except Exception as e:
                 return Response({"error": str(e)}, status=400)
         else:
