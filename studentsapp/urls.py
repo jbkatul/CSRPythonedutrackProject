@@ -11,5 +11,6 @@ urlpatterns = [
     path("demo-work/",sakshidemoview.as_view(), name='demo_view')
 
     #add urls as per your requirement
+    path('anushka-task/', TaskforAnushka.as_view(), name='anushka-task'),
 
 ] 
