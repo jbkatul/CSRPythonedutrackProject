@@ -10,5 +10,6 @@ urlpatterns = [
     path("update-student/", StudentInsertView.as_view(), name='update_student'),  # Reusing insert view for update
 
     #add urls as per your requirement
+    path('anushka-task/', TaskforAnushka.as_view(), name='anushka-task'),
 
 ] 
