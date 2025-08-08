@@ -109,3 +109,8 @@ class TaskforRachana(APIView):
         pass
 
 # write your own task inside a class TaskforRachana
+
+class sakshidemoview(APIView):
+    def get(self, request):
+        return Response("this is a get request")
+    
