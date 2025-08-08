@@ -8,6 +8,7 @@ urlpatterns = [
     path('get-all-students/', StudentGetAllView.as_view(), name='get_all_students'),
     path('delete-one-student/', StudentDeleteView.as_view(), name='delete_one_student'),
     path("update-student/", StudentInsertView.as_view(), name='update_student'),  # Reusing insert view for update
+    path("demo-work/",sakshidemoview.as_view(), name='demo_view')
 
     #add urls as per your requirement
     path('anushka-task/', TaskforAnushka.as_view(), name='anushka-task'),
