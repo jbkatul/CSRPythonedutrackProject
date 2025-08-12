@@ -3,6 +3,7 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from studentsapp.models import Student
 from studentsapp.serializers import StudentSerializer
+from rest_framework import status
 # Create your views here.
 
 
@@ -148,3 +149,10 @@ class Manasi_Task(APIView):
     def get(self,request):
         return Response({"message":"Hello , Welcome to student API !"})
 
+#Task done by Mohini
+class NewMsgView(APIView):
+    def get(self, request):
+        return Response({"message": "This is a GET request for new update."}, status=status.HTTP_200_OK)
+
+    def post(self, request):
+        return Response({"message": "This is a POST request for new update."}, status=status.HTTP_200_OK)
